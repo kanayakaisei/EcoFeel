@@ -1,0 +1,294 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #C9E8A6;
+}
+
+.header {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    padding: 8px 0;
+}
+
+
+
+main {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100svh;
+    animation: 2s ease-in-out fadeIn;
+}
+
+.mainImg {
+    height: 250px;
+    width: 240px;
+    background: none;
+    background-image: url(../img/circle.png);
+    background-position: center;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.number {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: -15px;
+    font-size: 70px;
+    color: #fff;
+    -webkit-text-stroke: 3px #0EAE71;
+    margin-left: 10px;
+}
+
+
+
+#percent {
+    font-size: 35px;
+    -webkit-text-stroke: 2px #0EAE71;
+}
+
+
+
+
+
+.town {
+    background-image: url(../img/town.png);
+    height: 180px;
+    width: 90%;
+    margin: 190px auto 0;
+    z-index: -1;
+}
+
+.backImg {
+    animation: 2s ease-in-out fadeIn;
+}
+
+.backImgA {
+    background-image: url(../img/backImgA.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background: #C9E8A6;
+    position: relative;
+}
+
+#searchBtn {
+    background: #fff;
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    border: #C9E8A6 solid 10px;
+    transform: translateY(-30px);
+}
+
+#searchBtn img {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+/* ーーーーーチュートリアルーーーーー */
+.tutorial {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 2px solid #0EAE71;
+    width: 370px;
+    height: 500px;
+    text-align: center;
+    padding: 20px;
+    z-index: 10;
+
+    h3 {
+        font-size: 24px;
+        margin: 30px 0;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: center;
+        margin: 30px 0 20px;
+    }
+
+    button {
+        font-size: 16px;
+        color: #8C8C8C;
+        background: #D9D9D9;
+        width: 80px;
+        height: 32px;
+        margin: 30px 10px 0;
+    }
+}
+
+.tutorial.active {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 9;
+}
+
+.overlay.active {
+    display: block;
+}
+
+button {
+    margin: 0 10px;
+    padding: 5px 15px;
+    background: #D9D9D9;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+#tutorialImg1 {
+    width: 135px;
+}
+
+#tutorialImg2 {
+    width: 212px;
+    height: 180px;
+}
+
+#tutorialImg3 {
+    width: 263px;
+    height: 180px;
+}
+
+
+
+
+/* ーーーーーモーダルーーーーー */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+    border: #0EAE71 3px solid;
+    height: 535px;
+    width: 315px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    color: #7E7878;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background: #DEDEDE;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border-radius: 100%;
+}
+
+.modalTitle {
+    font-size: 17px;
+}
+
+.modalNumber {
+    font-size: 70px;
+    color: #fff;
+    -webkit-text-stroke: 3px #0EAE71;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.modal img {
+    display: block;
+    margin: 10px auto 0;
+}
+
+.text {
+    font-size: 13px;
+    margin-top: 25px;
+    line-height: 20px;
+}

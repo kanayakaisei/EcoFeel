@@ -1,0 +1,133 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100svh;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #C9E8A6;
+}
+
+.header {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    padding: 8px 0;
+}
+
+.searchWrap {
+    text-align: center;
+}
+
+h2 {
+    margin: 40px 0 20px;
+    font-size: 24px;
+}
+
+.searchBox {
+    position: relative;
+    display: inline-block;
+}
+
+.search {
+    width: 340px;
+    height: 36px;
+    border: #52D261 2px solid;
+    border-radius: 6px;
+    color: #a8a8a8;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+#mic {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 18px;
+}
+
+.searchBtn {
+    font-size: 18px;
+    color: #52D261;
+    border: #52D261 solid 2px;
+    width: 100px;
+    height: 40px;
+    line-height: 35px;
+    border-radius: 5px;
+    margin: 20px auto 0;
+}
+
+.answerWrap {
+    display: none;
+    text-align: center;
+    width: 300px;
+    margin: 30px auto 0;
+    height: 300px;
+    font-size: 25px;
+}
+
+.request {
+    margin: 10px 0 5px;
+}
+
+.request {
+    font-size: 20px;
+}
+
+.answer {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+.answerText {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.footerIcon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background: #C9E8A6;
+    position: relative;
+
+}
+
+#searchBtn {
+    background: #fff;
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    border: #C9E8A6 solid 10px;
+    transform: translateY(-30px);
+}
+
+#searchBtn img {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

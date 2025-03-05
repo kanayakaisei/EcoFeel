@@ -1,0 +1,53 @@
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    background: #DAF9FF;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+main section {
+    margin: 40px 0;
+}
+
+.text {
+    width: 270px;
+    height: 40px;
+    background: #fff;
+    border: #52D261 1px solid;
+}
+
+.addressWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+}
+
+.address {
+    width: 100px;
+}
+
+.registrationBtn a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #64C96C;
+    display: block;
+    width: 123px;
+    height: 52px;
+    line-height: 52px;
+    border-radius: 16px;
+    font-size: 16px;
+    box-shadow: 0 4px 0 rgba(40, 164, 40, 100%);
+}

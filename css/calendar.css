@@ -1,0 +1,178 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100svh;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #C9E8A6;
+}
+
+.header {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    padding: 8px 0;
+}
+
+
+
+
+
+h2 {
+    font-size: 27px;
+    text-align: center;
+    margin: 40px 0 30px;
+}
+
+.subTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+}
+
+
+.month {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.month p {
+    padding: 0 10px 0;
+}
+
+.btn {
+    background: #fff;
+    border: #0EAE71 2px solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image: url(../img/monthBtn.png);
+    background-size: cover;
+}
+
+#backBtn {
+    transform: rotate(180deg);
+}
+
+.week {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    background: #74A14D;
+    height: 43px;
+    font-size: 17px;
+
+}
+
+.calendarWrap {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 1fr;
+    /* 自動で行数を調整 */
+    gap: 1px;
+    background-color: #ddd;
+    min-height: 435px;
+    /* 最小高さを設定 */
+}
+
+
+.day {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    height: 83px;
+    min-height: 83px;
+    /* 高さを固定 */
+}
+
+.calendar p {
+    background: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+}
+
+.calendarImg {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.calendarText {
+    font-size: 7px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#imgSize {
+    width: 30px;
+
+}
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.footerIcon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background: #C9E8A6;
+    position: relative;
+}
+
+#searchBtn {
+    background: #fff;
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    border: #C9E8A6 solid 10px;
+    transform: translateY(-30px);
+}
+
+#searchBtn img {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
